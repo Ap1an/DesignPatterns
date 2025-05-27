@@ -26,7 +26,8 @@ void SERVER::Listen(){
 }
 
 void SERVER::Accept(){
-    connect_sockfd_ = accept(sockfd_, (sockaddr *)&client_, (socklen_t *)sizeof(client_));
+    socklen_t len = sizeof(client_);
+    connect_sockfd_ = accept(sockfd_, (sockaddr *)&client_, &len);
     if (connect_sockfd_ == -1){
         throw std::runtime_error("Failed to connect client");
     }

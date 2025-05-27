@@ -1,6 +1,6 @@
-CMakeFiles/server.dir/server_main.cpp.o: \
-  /Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/server_main.cpp \
-  /Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/server.h \
+CMakeFiles/client.dir/client.cpp.o: \
+  /Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/client.cpp \
+  /Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/client.h \
   /Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/tcp_comunication.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/appleapiopts.h \

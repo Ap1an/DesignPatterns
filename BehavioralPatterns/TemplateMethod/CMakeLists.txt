@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.28)
 project(tcp)
 set(CMAKE_CXX_STANDARD 17)
+option(SERVER "Build Server" ON)
 
-add_executable(server 
-            server_main.cpp 
-            server.cpp 
-            tcp_comunication.cpp 
-            server.h 
-            tcp_comunication.h)
+if (SERVER)
+    add_executable(server server_main.cpp server.cpp tcp_comunication.cpp server.h tcp_comunication.h)
+else()
+    add_executable(client client_main.cpp client.cpp tcp_comunication.cpp client.h tcp_comunication.h)
+endif()

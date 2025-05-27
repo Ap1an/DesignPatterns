@@ -1,13 +1,16 @@
 #include "client.h"
 
-int mian(int argc, char **argv){
+int main(int argc, char **argv){
     try{
         if (argc < 2){
             std::cout << "Please input the server's ip:" << std::endl;
+            return 1;
         }
-        Tcp* server = new CLIENT(argv[1], "8888");
+        std::string ip = argv[1];
+        Tcp* server = new CLIENT(ip, "8888");
         server->Start();
-    }catch (std::exception e){
+        delete server;
+    }catch (const std::exception& e){
         std::cout << e.what() << std::endl;
     }
     return 0;

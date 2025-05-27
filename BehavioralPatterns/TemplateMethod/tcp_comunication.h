@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 #include <exception>
+#include <cstring>
 
 class Tcp{
 public:
