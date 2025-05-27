@@ -1,0 +1,28 @@
+#ifndef TCP_COMUNICATION_H
+#define TCP_COMUNICATION_H
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+
+#include <iostream>
+#include <string>
+#include <exception>
+
+class Tcp{
+public:
+    void Start();
+    Tcp(){};
+    virtual ~Tcp(){};
+protected:
+    virtual void CreatSocket() = 0;
+    virtual void BindSocket() = 0;
+    virtual void Listen() = 0;
+    virtual void Accept() = 0;
+    virtual void Connect() = 0; 
+    virtual void Comunication() = 0;
+};
+
+#endif
