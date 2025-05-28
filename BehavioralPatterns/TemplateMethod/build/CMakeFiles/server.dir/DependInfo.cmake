@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/client.cpp" "CMakeFiles/client.dir/client.cpp.o" "gcc" "CMakeFiles/client.dir/client.cpp.o.d"
-  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/client_main.cpp" "CMakeFiles/client.dir/client_main.cpp.o" "gcc" "CMakeFiles/client.dir/client_main.cpp.o.d"
-  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/tcp_comunication.cpp" "CMakeFiles/client.dir/tcp_comunication.cpp.o" "gcc" "CMakeFiles/client.dir/tcp_comunication.cpp.o.d"
+  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/server.cpp" "CMakeFiles/server.dir/server.cpp.o" "gcc" "CMakeFiles/server.dir/server.cpp.o.d"
+  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/server_main.cpp" "CMakeFiles/server.dir/server_main.cpp.o" "gcc" "CMakeFiles/server.dir/server_main.cpp.o.d"
+  "/Users/ap1an/Cpp/DesignPatterns/BehavioralPatterns/TemplateMethod/tcp_comunication.cpp" "CMakeFiles/server.dir/tcp_comunication.cpp.o" "gcc" "CMakeFiles/server.dir/tcp_comunication.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

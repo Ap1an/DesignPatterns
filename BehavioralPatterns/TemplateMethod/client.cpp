@@ -8,6 +8,11 @@ void CLIENT::CreatSocket(){
 }
 
 void CLIENT::Connect(){
+    memset(&server_, 0, sizeof(server_));
+    server_.sin_family = AF_INET;
+    server_.sin_addr.s_addr = inet_addr(ip_.c_str());
+    server_.sin_port = atoi(port_.c_str());
+
     if ((connect(sockfd_, (const sockaddr*)&server_, (socklen_t)sizeof(server_))) == -1){
         throw std::runtime_error("Failed to connect server");
     }
@@ -15,7 +20,7 @@ void CLIENT::Connect(){
 
 void CLIENT::Comunication(){
     std::string data;
-    int n = read(sockfd_, &data, sizeof(data));
+    int n = read(sockfd_, &data, 10);
     if (n == -1){
         throw std::runtime_error("Failed to read data");
     }else{
