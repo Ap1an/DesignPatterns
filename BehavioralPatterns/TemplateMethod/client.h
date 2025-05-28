@@ -7,6 +7,7 @@ class CLIENT: public Tcp{
 public:
     CLIENT(std::string ip, std::string prot): ip_(ip), port_(prot){};
     ~CLIENT(){};
+
 private:
     void CreatSocket() override;
     void BindSocket() override{};
@@ -14,6 +15,7 @@ private:
     void Accept() override{};
     void Connect() override;
     void Comunication() override;
+    
 private:
     int sockfd_;
     struct sockaddr_in server_;

@@ -14,9 +14,10 @@
 
 class Tcp{
 public:
-    void Start();
     Tcp(){};
     virtual ~Tcp(){};
+    void Start();
+    
 protected:
     virtual void CreatSocket() = 0;
     virtual void BindSocket() = 0;

@@ -3,7 +3,7 @@
 int main(int argc, char **argv){
     try{
         if (argc < 2){
-            std::cout << "Please input the server's ip:" << std::endl;
+            std::cout << "Please input the server's IP:" << std::endl;
             return 1;
         }
         std::string ip = argv[1];

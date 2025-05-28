@@ -7,6 +7,7 @@ class SERVER: public Tcp{
 public:
     SERVER(std::string ip, std::string prot): ip_(ip), port_(prot){};
     ~SERVER(){};
+
 private:
     void CreatSocket() override;
     void BindSocket() override;
@@ -14,6 +15,7 @@ private:
     void Accept() override;
     void Connect() override{};
     void Comunication() override;
+     
 private:
     int sockfd_;
     int connect_sockfd_;
