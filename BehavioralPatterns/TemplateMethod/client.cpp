@@ -19,8 +19,8 @@ void CLIENT::Connect(){
 }
 
 void CLIENT::Comunication(){
-    std::string data;
-    int n = read(sockfd_, &data, 10);
+    char data[10];
+    int n = read(sockfd_, data, 10);
     if (n == -1){
         throw std::runtime_error("Failed to read data");
     }else{

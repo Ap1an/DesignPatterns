@@ -35,7 +35,7 @@ void SERVER::Accept(){
 
 void SERVER::Comunication(){
     std::string data = "nihao";
-    int n = write(sockfd_, &data, sizeof(data));
+    int n = write(connect_sockfd_, &data, sizeof(data));
     if (n == -1){
         throw std::runtime_error("Failed to send data");
     }
